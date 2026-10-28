@@ -1,0 +1,49 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Development & Coding",
+      "description": "Skills for code clarity, tool-first development, live execution observability, and automation.",
+      "skills": [
+        "coding-principles",
+        "code-as-tools",
+        "notebook-observability",
+        "scripts",
+        "tasks"
+      ]
+    },
+    {
+      "title": "Research & Knowledge Synthesis",
+      "description": "Skills for scientific experiments, dataset curation, deep research, and compounding LLM wikis.",
+      "skills": [
+        "wiki-llm",
+        "research-and-experiments",
+        "create-qa-spectrum",
+        "gemini-deep-research",
+        "pdf-to-markdown-mcp"
+      ]
+    },
+    {
+      "title": "Agent & Runtime Systems",
+      "description": "Skills for managing agents, crafting skills, implementing MCP servers, and extending OpenCode runtimes.",
+      "skills": [
+        "agent-and-skill-improvement",
+        "manage-skills",
+        "manage-mcp",
+        "project-agent-systems",
+        "opencode-runtime-hooks",
+        "chatreplay"
+      ]
+    },
+    {
+      "title": "Operations & Cloud",
+      "description": "Skills for architecture visualization, Jira issue lifecycles, and Google Colab cloud workflows.",
+      "skills": [
+        "architecture-map",
+        "jira-workflow",
+        "colab-cli"
+      ]
+    }
+  ]
+}

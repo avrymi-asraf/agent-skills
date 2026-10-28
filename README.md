@@ -1,0 +1,109 @@
+# Agent Skills
+
+A curated collection of production-grade AI agent skills compatible with the [Skills CLI](https://skills.sh) (`npx skills`).
+
+These skills provide structured workflows, MCP tool wrappers, best practices, and runtime extensions for AI coding agents such as **Claude Code**, **Cursor**, **Codex**, **OpenCode**, and **Antigravity**.
+
+---
+
+## Installation & Usage
+
+### 1. Install via Skills CLI (`npx skills`)
+
+Install skills directly into your local project:
+
+```bash
+# Add skills interactively
+npx skills add avrymi-asraf/agent-skills
+
+# List all available skills in this repo
+npx skills add avrymi-asraf/agent-skills --list
+
+# Install a specific skill (e.g. wiki-llm)
+npx skills add avrymi-asraf/agent-skills --skill wiki-llm
+
+# Install multiple specific skills
+npx skills add avrymi-asraf/agent-skills --skill wiki-llm code-as-tools coding-principles
+
+# Install all skills non-interactively
+npx skills add avrymi-asraf/agent-skills --all
+```
+
+### 2. Global Installation
+
+Install globally to make skills available across all projects on your machine:
+
+```bash
+npx skills add avrymi-asraf/agent-skills -g
+```
+
+### 3. Target Specific Agents
+
+Specify which agent environment to install to (e.g. Claude Code, Cursor, OpenCode, Codex):
+
+```bash
+npx skills add avrymi-asraf/agent-skills --agent claude-code cursor
+```
+
+---
+
+## Skills Catalog
+
+| Skill | Description |
+| :--- | :--- |
+| [`agent-and-skill-improvement`](skills/agent-and-skill-improvement) | Maintains and improves agent files (identity, memory, tools) and skill files (`SKILL.md`). Load when completing tasks that produce learnings, updating agent behavior, or refining domain knowledge. |
+| [`architecture-map`](skills/architecture-map) | Generates production-quality interactive self-contained HTML architecture diagrams and agent-ready JSON from codebases. |
+| [`chatreplay`](skills/chatreplay) | Parses and interprets `.chatreplay.json` session logs capturing interactions between users, AI agents (VS Code / Copilot), and tools. |
+| [`code-as-tools`](skills/code-as-tools) | Guides writing research and exploratory code as small, composable, notebook-friendly tools rather than rigid pipelines. |
+| [`coding-principles`](skills/coding-principles) | Fundamental principles for code clarity, naming uniformity, live execution, and clean architecture without unnecessary refactoring. |
+| [`colab-cli`](skills/colab-cli) | Manages Google Colab cloud runtimes, secrets, remote execution, and SSH access directly via the Colab CLI in agentic workflows. |
+| [`create-qa-spectrum`](skills/create-qa-spectrum) | Streams, filters, and selects diverse reasoning QA datasets across multiple reasoning families, pushing them to Hugging Face. |
+| [`gemini-deep-research`](skills/gemini-deep-research) | Local MCP server for Google Gemini Deep Research interactions with explicit start, status polling, and file handling. |
+| [`jira-workflow`](skills/jira-workflow) | Jira issue tracking workflow — search, read, create, update issues, plan implementations, and reference commit tickets. |
+| [`manage-mcp`](skills/manage-mcp) | Guides designing and implementing focused Model Context Protocol (MCP) tools and integrating them into agent skills. |
+| [`manage-skills`](skills/manage-skills) | Rules and quality patterns for creating, auditing, modifying, and improving Agent Skills (`SKILL.md`). |
+| [`notebook-observability`](skills/notebook-observability) | Uses Jupyter notebooks as live observability playgrounds for production systems and AI pipelines while keeping them in sync with real APIs. |
+| [`opencode-runtime-hooks`](skills/opencode-runtime-hooks) | Runtime architecture analysis and hook authoring guide for OpenCode sessions, agents, and tool execution lifecycle. |
+| [`pdf-to-markdown-mcp`](skills/pdf-to-markdown-mcp) | Local MCP server converting PDFs to Markdown using Gemini or Ollama vision models with high-fidelity equation and table extraction. |
+| [`project-agent-systems`](skills/project-agent-systems) | Builds project-local agent, skill, MCP, and memory setups across OpenCode, Copilot, and Codex without polluting global settings. |
+| [`research-and-experiments`](skills/research-and-experiments) | Workflows and structure for formulating hypotheses, designing experiments, logging metrics, and drawing compounding conclusions. |
+| [`scripts`](skills/scripts) | Guides creation of operational Python (uv / PEP 723) and JS scripts for AWS/CDN environments with security and session handling. |
+| [`tasks`](skills/tasks) | Task runner automation using Python-native `invoke` and `uv` inline PEP 723 dependencies to replace legacy Makefiles. |
+| [`wiki-llm`](skills/wiki-llm) | Implements Karpathy's compounding LLM wiki pattern — synthesizing raw documents into an interlinked markdown knowledge base. |
+
+---
+
+## Repository Structure
+
+```text
+.
+├── README.md
+├── LICENSE
+├── skills.sh.json
+└── skills/
+    ├── agent-and-skill-improvement/
+    ├── architecture-map/
+    ├── chatreplay/
+    ├── code-as-tools/
+    ├── coding-principles/
+    ├── colab-cli/
+    ├── create-qa-spectrum/
+    ├── gemini-deep-research/
+    ├── jira-workflow/
+    ├── manage-mcp/
+    ├── manage-skills/
+    ├── notebook-observability/
+    ├── opencode-runtime-hooks/
+    ├── pdf-to-markdown-mcp/
+    ├── project-agent-systems/
+    ├── research-and-experiments/
+    ├── scripts/
+    ├── tasks/
+    └── wiki-llm/
+```
+
+---
+
+## License
+
+[MIT](LICENSE)
